@@ -36,7 +36,7 @@ public class Challenge {
 				}
 
 				// vertical
-				if ((i + 3) < 20) {
+				if ((i + 3) < len) {
 					maxProduct = findProduct(matrix[i][j], matrix[i+1][j], matrix[i + 2][j], matrix[i + 3][j], maxProduct);
 				}
 
