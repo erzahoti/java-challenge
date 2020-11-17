@@ -41,9 +41,10 @@ public class Challenge {
 				}
 
 				// diagonal left up
-				 if ((i - 3) >= 0 && (j - 3) >= 0)  
+				 if ((i - 3) >= 0 && (j - 3) >= 0)  {
 					 maxProduct = findProduct(matrix[i][j], matrix[i - 1][j - 1], matrix[i - 2][j - 2],matrix[i - 3][j - 3], maxProduct);
-
+				 }
+				
 				// diagonal right up
 				 if ((i - 3) >= 0 && (j + 3) < len) {
 					 maxProduct = findProduct(matrix[i][j], matrix[i - 3][j + 1], matrix[i - 2][j + 2], matrix[i - 3][j + 3], maxProduct);
@@ -75,7 +76,7 @@ public class Challenge {
 	static int findProduct(int num0, int num1, int num2, int num3, int maxProduct) {
 		int prod = num0 * num1 * num2 * num3;
 		if (maxProduct < prod) {
-			maxProduct= prod;
+			maxProduct = prod;
 		}
 		return maxProduct;
 	}
