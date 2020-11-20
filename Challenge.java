@@ -1,3 +1,7 @@
+/**
+ Create an application that prints the highest possible product you can get from 4 two digit numbers that are next to each other, either in a row, column 
+ or in any of the diagonals (including the anti-diagonals). 
+**/
 public class Challenge {
 
 	public static void main(String[] args) {
